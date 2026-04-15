@@ -185,6 +185,49 @@ body{cursor:none;}
   }
 }
 
+
+
+.whatsapp-float{
+  position:fixed;
+  right:20px;
+  bottom:20px;
+  width:60px;
+  height:60px;
+  background:#25D366;
+  border-radius:50%;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  box-shadow:0 10px 25px rgba(0,0,0,.2);
+  z-index:9999;
+  transition:all 0.2s ease;
+}
+
+.whatsapp-float:hover{
+  transform:translateY(-3px) scale(1.05);
+  box-shadow:0 15px 35px rgba(0,0,0,.25);
+}
+
+
+/* WhatsApp icon size override */
+.whatsapp-float{
+  right:16px !important;
+  bottom:16px !important;
+  width:44px !important;
+  height:44px !important;
+  padding:0 !important;
+  border-radius:50% !important;
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+}
+
+.whatsapp-float img{
+  width:20px !important;
+  height:20px !important;
+  display:block !important;
+}
+
 </style>
 
 </head>
@@ -295,7 +338,11 @@ body{cursor:none;}
       <div class="contact">
         <h2>Let’s Create Your <em>Next Piece</em></h2>
         <p style="margin:1rem 0 1.25rem">For orders, prices, and custom requests, contact Juju Couture directly.</p>
-        <p>Email: hello@jujucouture.com<br>WhatsApp: <a href="https://wa.me/26879021297" target="_blank" style="color:#fff;text-decoration:underline;">+268 79021297</a><br>Location: Eswatini, Southern Africa</p>
+        <p>Email: hello@jujucouture.com<br>WhatsApp: 
+<a href="https://wa.me/26879021297" target="_blank" class="whatsapp-float">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+<br>Location: Eswatini, Southern Africa</p>
       </div>
     </section>
   </main>
@@ -312,6 +359,12 @@ document.addEventListener('mousemove', e => {
 });
 </script>
 
+
+
+<a href="https://wa.me/26879021297" target="_blank" class="whatsapp-float">
+  <img src="https://cdn-icons-png.flaticon.com/512/733/733585.png" alt="WhatsApp">
+</a>
+
+
 </body>
 </html>
-EOF
